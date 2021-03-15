@@ -1,0 +1,17 @@
+<%- include ("./partials/head.ejs") %>
+
+<% const findID = data.find(d => d.id === selectedImage) %>
+
+<section class="selected-image">
+    <div>
+        <img src="<%- findID.img_src %>">
+        <p> Picture taken in earth time: <%- findID.earth_date %>
+        <br>
+            Picture taken in Martian time: <%- findID.sol %> sol
+        <br>
+            Taken from the <%- findID.camera %>
+        </p>
+    </div>
+</section>
+
+<%- include ("./partials/footer.ejs") %>

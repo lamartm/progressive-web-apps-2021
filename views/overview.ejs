@@ -1,0 +1,13 @@
+<%- include ("./partials/head.ejs") %>
+
+<section class="images">
+<%  data.forEach(item => { %>
+    <a href="/<%- item.rover %>/<%- item.id %>">
+        <div>
+           <img src="<%- item.img_src %>"> <p> Picture taken: <%- item.earth_date %> from the <%- item.camera %></p> 
+        </div>
+    </a>
+<% }) %>
+</section>
+
+<%- include ("./partials/footer.ejs") %>
