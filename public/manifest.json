@@ -1,0 +1,11 @@
+{
+    "name": "NASA Rover Web App",
+    "short_name": "NASA Web App",
+    "description": "Latest pictures from the rovers on Mars!",
+    "theme_color": "#00000",
+    "background_color": "#00000",
+    "display": "standalone",
+    "Scope": "/",
+    "start_url": "/"
+  }
+  

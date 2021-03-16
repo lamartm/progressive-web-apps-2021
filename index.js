@@ -34,6 +34,24 @@ app.get('/Curiosity/:id', function(req, res) {
 		})
 })
 
+app.get('/Perseverance', function(req, res) {
+	// loading('active')
+	getData('Perseverance')
+		.then(d => {
+			res.render('overview', { data: d } )
+		})
+})
+
+app.get('/Perseverance/:id', function(req, res) {
+	getData('Perseverance')
+		.then(d => {
+			res.render('detail', { 
+				data: d,
+				selectedImage: parseInt(req.params.id)
+			} )
+		})
+})
+
 app.get('/Spirit', function(req, res) {
 	getData('Spirit')
 		.then(d => {
