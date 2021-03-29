@@ -2,10 +2,18 @@
     "name": "NASA Rover Web App",
     "short_name": "NASA Web App",
     "description": "Latest pictures from the rovers on Mars!",
-    "theme_color": "#00000",
-    "background_color": "#00000",
+    "theme_color": "#000000",
+    "background_color": "#000000",
     "display": "standalone",
-    "Scope": "/",
-    "start_url": "/"
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/images/icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ]
   }
   

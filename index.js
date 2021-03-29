@@ -65,6 +65,9 @@ app.get('/Opportunity', function(req, res) {
 			res.render('overview', { data: d } )
 		})
 })
+app.get('/offline', function(req, res) {
+			res.render('offline')
+})
 
 app.listen(port, function() {
 	console.log(`Application started on port: ${port}`)
