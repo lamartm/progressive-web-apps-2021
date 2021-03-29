@@ -4,7 +4,7 @@ https://pwa-mohamed.herokuapp.com/
 
 ## Description
 
-In this project I made a progressive web app, in which you have an overview of the latest photo's from the martian rovers, and a detail page of every photo. In the detail page you can view information like when the rover launched, which camera its using, how long it has been on Mars etc..
+In this project I made a progressive web app, in which you have an overview of the latest photo's from the martian rovers, and a detail page of every photo. In the detail page you can view information like when the rover launched, which camera its using, how long it has been on Mars etc.. The app has been improved to be fully usable offline, and the loading times have been drastically improved
 
 ## Caching
 With help of the service worker it's possible to view the web app offline, by caching the most important files on the first load of the app. Whenever you visit a page within the web app though, all of its content will be cached so that the user experience will be fast and make it possible for you to visit those pages later even without internet.
