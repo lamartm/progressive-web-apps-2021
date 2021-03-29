@@ -27,7 +27,7 @@ While auditing the site to see where it would be possible to improve loading tim
 ![3](https://github.com/lamartm/progressive-web-apps-2021/blob/master/public/images/3.PNG)
 ![4](https://github.com/lamartm/progressive-web-apps-2021/blob/master/public/images/4.PNG)
 
-
+As you can see, it's a drastic difference in speed, going from 17 seconds to now 2 seconds.
 ## Installation
 
 Clone the repo:
