@@ -1,17 +1,27 @@
 const express = require('express')
+const compression = require('compression')
 const port = process.env.PORT || 3000
 
 const { getData } = require('./public/js/api')
-// const { loading } = require('./public/js/loader')
+const cookieParser = require('cookie-parser')
 
 const app = express()
+
+app.use(compression({
+	level: 6,
+	threshold: 0
+})) 
+app.use(cookieParser())
+app.use(express.urlencoded({ extended: true }))
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
 app.use(express.static('public'))
 
+
 app.get('/', function(req, res) {
 	res.render('home', {
+
 		pageTitle: `Home`
 	})
 })

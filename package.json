@@ -9,11 +9,15 @@
   },
   "dependencies": {
     "browserify": "^17.0.0",
+    "compression": "^1.7.4",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.5",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "parser": "^0.1.4"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",
@@ -21,8 +25,12 @@
     "gulp-uglify": "^3.0.2"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "npm run build && node index.js",
     "dev": "nodemon index.js",
+    "build": "npm run build:css && npm run build:js && npm run build:img",
+    "build:css": "node ./build/build-css.js",
+    "build:js": "node ./build/build-js.js",
+    "build:img": "node ./build/build-img.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

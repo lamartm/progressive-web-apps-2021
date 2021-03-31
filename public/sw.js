@@ -1,5 +1,5 @@
-const staticCache = 'static-site-v2'
-const dynamicCache = 'dynamic-cache-v4'
+const staticCache = 'static-site-v4'
+const dynamicCache = 'dynamic-cache-v5'
 const assets = [
     'css/style.css',
     'images/curiosity.jpg',
@@ -50,10 +50,8 @@ self.addEventListener('fetch', event => {
                     })
                 })
             })
-            .catch(() => {
-                if(event.request.url.indexOf('.html') > -1){
-                        caches.match('/offline')
-                    }
-                })
+            .catch((err) => {
+                        return caches.match('/offline')
+                    })
     )
 })  
