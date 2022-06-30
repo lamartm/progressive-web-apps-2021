@@ -1,5 +1,5 @@
 const staticCache = "static-site-v13";
-const dynamicCache = "dynamic-cache-v40";
+const dynamicCache = "dynamic-cache-v42";
 const assets = [
   "images/curiosity.jpg",
   "images/opp.jpg",
