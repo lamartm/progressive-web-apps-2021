@@ -1,6 +1,6 @@
 # NASA Progressive Web App
 ![overview](https://github.com/lamartm/web-app-from-scratch-2021/blob/master/images/3kbl.png)
-https://pwa-mohamed.herokuapp.com/
+https://lit-coast-91448.herokuapp.com/
 
 ## Description
 
